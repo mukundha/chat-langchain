@@ -31,7 +31,7 @@ export function EmptyState(props: { onChoice: (question: string) => any }) {
               color={"gray.200"}
               textAlign={"center"}
             >
-              How do I use a RecursiveUrlLoader to load content from a page?
+              What are the primary challenges in Line Balancing?
             </Heading>
           </CardHeader>
         </Card>
@@ -52,7 +52,7 @@ export function EmptyState(props: { onChoice: (question: string) => any }) {
               color={"gray.200"}
               textAlign={"center"}
             >
-              What does RunnablePassthrough.assign() do?
+              How to manage disruptions in production line?
             </Heading>
           </CardHeader>
         </Card>
@@ -74,7 +74,7 @@ export function EmptyState(props: { onChoice: (question: string) => any }) {
               color={"gray.200"}
               textAlign={"center"}
             >
-              Explain multi-vector retrieval and how it can improve results.
+              Best practices in monitoring line quality
             </Heading>
           </CardHeader>
         </Card>
@@ -95,7 +95,7 @@ export function EmptyState(props: { onChoice: (question: string) => any }) {
               color={"gray.200"}
               textAlign={"center"}
             >
-              How do I run a model locally on my laptop with Ollama?
+              What is the role in AI in industrial engineering?
             </Heading>
           </CardHeader>
         </Card>

@@ -23,6 +23,7 @@ export function SourceBubble({
   return (
     <Card
       onClick={async () => {
+        console.log(source)
         window.open(source.url, "_blank");
         if (runId) {
           await sendFeedback({
@@ -43,7 +44,7 @@ export function SourceBubble({
     >
       <CardBody>
         <Heading size={"sm"} fontWeight={"normal"} color={"white"}>
-          {source.title}
+          {source.url}
         </Heading>
       </CardBody>
     </Card>

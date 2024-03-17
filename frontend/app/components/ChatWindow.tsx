@@ -28,11 +28,7 @@ import { Source } from "./SourceBubble";
 import { apiBaseUrl } from "../utils/constants";
 
 const MODEL_TYPES = [
-  "openai_gpt_3_5_turbo",
-  "anthropic_claude_3_sonnet",
-  "google_gemini_pro",
-  "fireworks_mixtral",
-  "cohere_command",
+  "openai_gpt_3_5_turbo",  
 ];
 
 const defaultLlmValue =
@@ -220,7 +216,7 @@ export function ChatWindow(props: { conversationId: string }) {
           mb={1}
           color={"white"}
         >
-          Chat LangChain 🦜🔗
+          Industrial Engineer's Copilot
         </Heading>
         {messages.length > 0 ? (
           <Heading fontSize="md" fontWeight={"normal"} mb={1} color={"white"}>
@@ -234,10 +230,7 @@ export function ChatWindow(props: { conversationId: string }) {
             marginTop={"10px"}
             textAlign={"center"}
           >
-            Ask me anything about LangChain&apos;s{" "}
-            <Link href="https://python.langchain.com/" color={"blue.200"}>
-              Python documentation!
-            </Link>
+            Ask me anything about Industrial Engineering            
           </Heading>
         )}
         <div className="text-white flex flex-wrap items-center mt-4">
@@ -254,13 +247,7 @@ export function ChatWindow(props: { conversationId: string }) {
                 }}
                 width={"240px"}
               >
-                <option value="openai_gpt_3_5_turbo">GPT-3.5-Turbo</option>
-                <option value="anthropic_claude_3_sonnet">Claude 3 Sonnet</option>
-                <option value="google_gemini_pro">Google Gemini Pro</option>
-                <option value="fireworks_mixtral">
-                  Mixtral (via Fireworks.ai)
-                </option>
-                <option value="cohere_command">Cohere</option>
+                <option value="openai_gpt_3_5_turbo">GPT-3.5-Turbo</option>                
               </Select>
             )}
           </div>
@@ -291,7 +278,7 @@ export function ChatWindow(props: { conversationId: string }) {
           value={input}
           maxRows={5}
           marginRight={"56px"}
-          placeholder="What does RunnablePassthrough.assign() do?"
+          placeholder="What is the role of AI in Industrial engineering?"
           textColor={"white"}
           borderColor={"rgb(58, 58, 61)"}
           onChange={(e) => setInput(e.target.value)}
@@ -318,22 +305,7 @@ export function ChatWindow(props: { conversationId: string }) {
             }}
           />
         </InputRightElement>
-      </InputGroup>
-
-      {messages.length === 0 ? (
-        <footer className="flex justify-center absolute bottom-8">
-          <a
-            href="https://github.com/langchain-ai/chat-langchain"
-            target="_blank"
-            className="text-white flex items-center"
-          >
-            <img src="/images/github-mark.svg" className="h-4 mr-1" />
-            <span>View Source</span>
-          </a>
-        </footer>
-      ) : (
-        ""
-      )}
+      </InputGroup>      
     </div>
   );
 }
