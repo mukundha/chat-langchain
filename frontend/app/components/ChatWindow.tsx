@@ -216,7 +216,7 @@ export function ChatWindow(props: { conversationId: string }) {
           mb={1}
           color={"white"}
         >
-          Industrial Engineer's Copilot
+          Industrial Engineer`&apos;`s Copilot
         </Heading>
         {messages.length > 0 ? (
           <Heading fontSize="md" fontWeight={"normal"} mb={1} color={"white"}>
